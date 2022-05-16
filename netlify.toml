@@ -3,5 +3,5 @@ functions = "functions"
 
 [[redirects]]
 to="/.netlify/functions/index/:splat"
-from "/*"
+from="/*"
 status=200
