@@ -6,7 +6,7 @@ import pool from './db/connection.js'
 import serverless from 'serverless-http'
 import dotenv from 'dotenv'
 
-console.log(dotenv.config())
+dotenv.config()
 const app = express()
 const port = process.env.PORT || 3000
 const router = express.Router();
@@ -71,4 +71,4 @@ app.listen(port, () => {
 
 app.use('/',router);
 
-export default serverless(app);
+export default app;

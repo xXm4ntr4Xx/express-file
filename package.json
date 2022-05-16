@@ -5,8 +5,8 @@
   "main": "functions/api.js",
   "type": "module",
   "scripts": {
-    "start": "nodemon api.js",
-    "dev": "nodemon -r dotenv/config api.js"
+    "start": "nodemon index.js",
+    "dev": "nodemon -r dotenv/config index.js"
   },
   "repository": {
     "type": "git",
