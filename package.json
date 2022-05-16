@@ -6,7 +6,8 @@
   "type": "module",
   "scripts": {
     "start": "nodemon index.js",
-    "dev": "nodemon -r dotenv/config index.js"
+    "dev": "nodemon -r dotenv/config index.js",
+    "createT": "node -r dotenv/config ./db/scripts/users/createTable.js"
   },
   "repository": {
     "type": "git",
