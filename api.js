@@ -2,11 +2,11 @@ import express from 'express';
 import cookieParser  from 'cookie-parser';
 import cors  from 'cors';
 import logger  from 'morgan';
-import pool from '../db/connection.js'
+import pool from './db/connection.js'
 import serverless from 'serverless-http'
 import dotenv from 'dotenv'
 
-dotenv.config()
+console.log(dotenv.config())
 const app = express()
 const port = process.env.PORT || 3000
 const router = express.Router();
