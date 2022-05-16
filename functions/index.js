@@ -17,7 +17,7 @@ app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 
 
-app.use('/.netlify/functions/index',router)
+app.use('/',router)
 
 /* GET users listing. */
 router.get("/", async (req, res, next)=> {
@@ -66,6 +66,6 @@ app.listen(port, () => {
   console.log(`http://localhost:${port}/`)
 })
 
-
+app.use('/',router);
 
 export default serverless(app);
