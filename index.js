@@ -30,7 +30,7 @@ router.get("/", async (req, res, next)=> {
  });
 });
 
-router.get("/drinks", async (req, res, next)=> {
+router.get(`http://localhost:${port}/drinks`, async (req, res, next)=> {
   const cocktailList = await pool.query('SELECT * FROM cocktails')
   res.json({ 
     payload:cocktailList.rows
@@ -69,6 +69,6 @@ app.listen(port, () => {
   console.log(`http://localhost:${port}/`)
 })
 
-app.use('/',router);
+
 
 export default app;
