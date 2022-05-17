@@ -19,7 +19,7 @@ app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 
 
-app.use('https://cokctail.herokuapp.com/',router)
+app.use('/',router)
 
 /* GET users listing. */
 router.get("/", async (req, res, next)=> {
