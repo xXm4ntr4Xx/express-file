@@ -26,7 +26,7 @@ app.use('/',router)
 router.get("/", async (req, res, next)=> {
   res.json({ 
     message:'connected to database',
-    link:'http://localhost:3000/drinks'
+    link:`http://localhost:${port}/drinks`
  });
 });
 
