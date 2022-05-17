@@ -1,3 +1,3 @@
 # express-file
 
-express serverless functions
+this is is the backend of my cocktailpedia app
