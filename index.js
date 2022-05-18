@@ -33,7 +33,6 @@ router.get("/", async (req, res, next)=> {
  });
 });
 
-
 router.get(`/drinks`, async (req, res, next)=> {
   const cocktailList = await pool.query('SELECT * FROM cocktails')
   res.json({ 
