@@ -9,6 +9,4 @@ const createTable = async ()=>{
  console.log(response)
 }
 
-// db.end();
-
 createTable();
